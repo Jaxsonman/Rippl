@@ -19,9 +19,8 @@ function main() {
     <Provider store={createStoreWithMiddleware(reducers)}>
       <Router history={history}>
         <Switch>
-            {/* <Route path="/" exact component={App}/> */}
-          <Route path="/" exact component={Projects} />
-          {/* <Route path="/Projects" component={Projects}/> */}
+            <Route path="/" exact component={App}/>
+            <Route path="/Projects" component={Projects}/>
          </Switch>
       </Router>
     </Provider>

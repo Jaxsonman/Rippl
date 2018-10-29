@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TeamMembers from './projects-team';
 import ProjectHeader from './projectHeader';
+import Project from './projectsProjects';
 
 class Projects extends Component {
 
@@ -30,7 +31,7 @@ class Projects extends Component {
 
         return(
             <div className="projects">
-                <ProjectHeader />
+                <ProjectHeader title="Team Header"/>
                 <div className="projects__team">
                 <TeamMembers imgSrc="/assets/pic.jpg"  name="charles1" text="This is a team member description"/>
                 <TeamMembers imgSrc="/assets/pic2.jpg"  name="charles2" text="This is a team member description" />
@@ -39,8 +40,13 @@ class Projects extends Component {
                 <TeamMembers imgSrc="/assets/pic2.jpg"  name="charles5" text="This is a team member description" />
                 <TeamMembers imgSrc="/assets/pic3.jpg"  name="charles6" text="This is a team member description" />
                 </div>
-                <div className="projects__projects">
-
+                <ProjectHeader title="Projects"/>
+                <div className="project">
+                    <Project imgSrc="/assets/sensuous-sandwich.png" text="project content for the projects on our project page"/>
+                    <Project imgSrc="/assets/Capture.png" text="project content for the projects on our project page"/>
+                    <Project imgSrc="/assets/Capture.png" text="project content for the projects on our project page"/>
+                    <Project imgSrc="/assets/sensuous-sandwich.png" text="project content for the projects on our project page"/>
+                    
                 </div>
             </div>
         )

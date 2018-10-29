@@ -2,8 +2,16 @@ import React, { Component } from 'react';
 
 class Project extends Component {
     render() {
+
+        const { imgSrc, text } = this.props;
+
         return(
-            <h2>hi</h2>
+            <div className="projectPage">
+            <img className="projectPage__image" src={imgSrc} alt="teamMember" />
+            <div className="projectPage__text">
+                { text }
+            </div>
+            </div>
         )
     }
 }
