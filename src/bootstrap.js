@@ -12,6 +12,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
 import Projects from './components/projects/projects';
 import history from './history';
+import Contact from './components/contactpage';
+
 
 
 function main() {
@@ -21,6 +23,7 @@ function main() {
         <Switch>
             <Route path="/" exact component={App}/>
             <Route path="/Projects" component={Projects}/>
+            <Route path="/contact" component={Contact} />
          </Switch>
       </Router>
     </Provider>

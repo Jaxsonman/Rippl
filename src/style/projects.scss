@@ -1,22 +1,28 @@
+html {
+    height: 100%;
+}
+
+
 .project {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 30px 100px;
     transition: all .3s ease;
-    
-   
-    
-    
+    height: 100%;
+
 }
 
 .projectPage {
 
+
+    height: 400px;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
+    transition: all 0.5s ease;
 
     & > * {
         grid-row: 1/-1;
@@ -27,6 +33,9 @@
          .projectPage__text {
             opacity: 1;
         }
+        &__image {
+            box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+        }
     }
      &__text {
         opacity: 0;
@@ -34,9 +43,8 @@
         transition: all 0.5s ease;
         color: white;
         background-color: rgba(0,0,0, 0.5);
-        height: 90%;
+        height: 100%;
         width: 100%;
-        margin-top: 28px;
         justify-items: center;
         align-items: center;
         border-radius: 15px;
@@ -44,16 +52,10 @@
     }
     
     &__image {
-        height: 350px;
+        height: 100%;
         border-radius: 15px;
-        margin-top: 30px;
-        transition: all 0.5s ease;
-        // &:hover {
-        //     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
-        //     .projectPage__text {
-        //         opacity: 1;
-        //     }
-        // }
+        
+        transition: all 0.3s ease;
     }
     
 }
