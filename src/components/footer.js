@@ -9,7 +9,7 @@ class Footer extends Component {
                     <img src='/assets/images/rippl.png' alt="logo" />
                 </div>
                 <div className="footer_icons">
-                    <Button icon="fab fa-github" />
+                    <a href="#" target="_blank"><i className="fab fa-github"></i></a>
                     <a href="#" target="_blank"><i className="fab fa-facebook"></i></a>
                     <a href="#" target="_blank"> <i className="fab fa-linkedin-in"></i></a>
                     <a href="#" target="_blank"> <i className="fab fa-instagram"></i></a>

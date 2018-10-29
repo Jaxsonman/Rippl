@@ -1,0 +1,45 @@
+@mixin images {
+    border: 1px solid black;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+
+.homeAbout {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    &__statement {
+        height: 150px;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        font-size: 4em;
+    }
+
+    &__icon {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        font-size: 1.7em;
+    }
+}
+
+.homeAbout__icons {
+    border-radius: 50%;
+}
+
+.IOS__image {
+    @include images;
+}
+
+.Website__image {
+    @include images;
+}
+
+.Android__image {
+    @include images;
+}
