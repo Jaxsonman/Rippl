@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TextLink from './TextLinks';
 
 class Header extends Component {
     render() {
@@ -15,21 +16,31 @@ class Header extends Component {
                 <div className="header__right">
                     <div className="links">
                         <div className="links__home">
-                            {/* <link>home</link>
-                            <link>projects</link>
-                            <link>contact</link> */}
-                            <div>home</div>
-                            <div>projects</div>
-                            <div>contact</div>
+                            <TextLink
+                            to="/home"
+                            text="Home"
+                            />
+
+                            <TextLink
+                            to="/projects"
+                            text="Projects"
+                            />
+                            
+                            <TextLink
+                            to="contact"
+                            text="Contact"
+                            />
+
                         </div>
                     </div>
                 </div>
 
                 <div className="contentSection">
                     <div className="contentSection__content">
-                        <p>random text</p>
+                        <p>We Deliver High Quality Applications That Convert</p>
+                        <p>Websites, IOS, Android</p>
                     </div>
-                    <button className="contactButton">contact</button>
+                    <button className="contactButton">Contact Us</button>
                 </div>
 
 
