@@ -1,0 +1,28 @@
+.footer {
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    justify-content: center;
+}
+
+.footer__logo__image {
+    height: 125px;
+    width: 300px;
+}
+
+.footer_icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    font-size: 2.5em;
+    color: black;
+
+}
+
+.icons {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: $color-ripplBlue;
+    }
+}

@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 
 import { Link } from 'react-router-dom';
 
-class TextLink extends Component {
+class SeeMore extends Component {
    render() {
        const {to, text} = this.props;
        return(
-           <Link to={to}className="text-link">
+           <Link to={to}className="seeMore">
                {text}
            </Link>
        )
    }
 }
-export default TextLink;
+export default SeeMore;
 
