@@ -1,0 +1,62 @@
+.homeProject {
+    background-image: url(../../static/assets/images/project-wood.jpg);
+    padding:100px;
+    height:700px;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    
+}
+
+.homeProject__portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding: 20px;
+    text-align: center;
+}
+
+.homeProject__portfolios {
+
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr;
+
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.projectOne {
+    height: 300px;
+    width: 420px;
+}
+
+.seeMore {
+
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: end;
+    text-decoration: none;
+    font-size: 1.2em;
+
+    font-weight: bold;
+    color: white;
+
+    &:hover {
+        color:black;
+    }
+}
+

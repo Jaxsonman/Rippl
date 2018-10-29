@@ -1,5 +1,4 @@
 html {
-    font-size: 75.5%; // 1rem is 10px
     font-family: 'Open Sans';
 }
 
@@ -32,3 +31,9 @@ body {
 
 @import 'teamHeaders';
 @import 'projects';
+@import 'variables';
+@import 'header';
+@import 'homeAbout';
+@import 'homeProjects';
+@import 'footer';
+
